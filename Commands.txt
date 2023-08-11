@@ -1,0 +1,33 @@
+##Select azure subscription in command prompt
+az login
+
+##if u are having 2 subscriptions we need to select one
+az account --help
+az account set --help
+az account set --subscription "subscription ID"
+
+
+##after creating folders of resource group create .tf file and take providers from documentation
+terraform init
+
+##after completion of terraform init check the "terraform on azure" folder .terraform folder
+it will install some provider which we mentioned the resourcegroup.tf file
+
+
+##terraform plan
+##terraform apply 
+ enter value: yes
+
+or else 
+##terraform apply -auto-approve
+  to enter by default
+
+---Now we get resouce group in the azure portal----
+
+##terraform destroy
+  to destroy the created resources
+
+##terraform plan -out storageaccount.tf
+  to change the terraform state file
+
+##terraform refresh
