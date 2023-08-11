@@ -14,3 +14,11 @@ provider "azurerm" {
   features {}
 
 }
+terraform{
+  backend "azurerm"{
+    storage_account_name = "leela12345"
+    container_name = "tfstate"
+    key = "terraform.tfstate"
+    access_key = "oyyw/mn8K7YUbYI5CR6KWb6Bmr/AJsf3AAk06ObBc1kHrT6UxAqB0gf/TMETRgtXSSXCB79h7q83+AStiQhcgw=="
+  }
+}
